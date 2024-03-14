@@ -1,0 +1,251 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#root {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.PageHeader {
+    padding: 0.5rem;
+    background-color: lightblue;
+    color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.PageHeader a {
+    color: dimgray;
+    text-decoration: none;
+}
+.PageHeader svg {
+    font-size: 2rem;
+}
+
+.pageFooter {
+    padding: 0.5rem;
+    background-color: lightblue;
+    text-align: center;
+    place-content: center;
+    display: grid;
+}
+.Nav {
+    background-color: black;
+    color: aliceblue;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SearchPosts {
+    padding: 3%;
+    border-radius: 5px;
+}
+.Nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Nav li {
+    padding: 0.5rem;
+}
+.navlink {
+    color: aquamarine;
+    text-decoration: none;
+}
+.navlink:hover {
+    color: aliceblue;
+}
+/*  */
+.post {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.postDetailPage {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+    text-align: justify;
+}
+.Home .post a {
+    text-decoration: none;
+}
+
+.Home .post a,
+.Home .post a:visited {
+    color: #000;
+}
+
+.post:first-child {
+    margin-top: 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.postDate {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+.deleteButton {
+    background-color: red;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    border: none;
+    color: azure;
+    margin-left: 1rem;
+    cursor: pointer;
+    width: 6rem;
+}
+
+.editButton {
+    width: 6rem;
+    cursor: pointer;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    border: none;
+    color: azure;
+    background-color: #ab620b;
+}
+.About,
+.Home,
+.editPostPage,
+.About,
+.PostPage,
+.newPostForm {
+    padding: 1rem;
+    flex-grow: 1;
+}
+/*  */
+/*  */
+.newPostForm {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    width: 50%;
+}
+.postTitle {
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+}
+.postButton {
+    width: 61px;
+    padding: 4px;
+    margin-top: 1rem;
+}
+.postBodyTextfield,
+.postTitleTextfield {
+    padding: 0.6rem;
+}
+.postBodyTextfield {
+    min-height: 140px;
+}
+/* round slider */
+/* .slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+} */
+/*  */
+@media (max-width: 520px) {
+    .newPostForm {
+        width: 80%;
+    }
+    .Nav {
+        display: grid;
+    }
+    .post {
+        padding: 0.6rem;
+    }
+}
